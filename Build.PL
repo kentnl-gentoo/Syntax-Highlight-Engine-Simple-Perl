@@ -10,7 +10,7 @@ my $builder = Module::Build->new(
     requires => {
         'Test::More' => 0,
         'version'    => 0,
-        'Syntax::Highlight::Engine::Simple'    => 0,
+        'Syntax::Highlight::Engine::Simple'    => '0.02',
     },
     add_to_cleanup      => [ 'Syntax-Highlight-Engine-Simple-Perl-*' ],
 );

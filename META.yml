@@ -1,12 +1,12 @@
 ---
 name: Syntax-Highlight-Engine-Simple-Perl
-version: 0.0.1
+version: 0.02
 author:
   - 'Sugama Keita <sugama@jamadam.com>'
 abstract: "(EXPERIMENTAL) Perl code highlighting class"
 license: perl
 requires:
-  Syntax::Highlight::Engine::Simple: 0
+  Syntax::Highlight::Engine::Simple: 0.02
   Test::More: 0
   version: 0
 generated_by: Module::Build version 0.2808
@@ -16,6 +16,6 @@ meta-spec:
 provides:
   Syntax::Highlight::Engine::Simple::Perl:
     file: lib/Syntax/Highlight/Engine/Simple/Perl.pm
-    version: 0.0.1
+    version: 0.02
 resources:
   license: http://dev.perl.org/licenses/

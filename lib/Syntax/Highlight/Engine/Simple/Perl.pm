@@ -3,7 +3,7 @@ use strict;
 use warnings;
 use base qw(Syntax::Highlight::Engine::Simple);
 #use version;
-our $VERSION = '0.0.1';
+our $VERSION = '0.02';
 
 ### ----------------------------------------------------------------------------
 ### set syntax
@@ -79,12 +79,12 @@ sub setSyntax {
 			{
 				class => 'keyword2',
 				regexp => '(?m)^=.+$',
-				allowed_container => ['perlpod'],
+				container => 'perlpod',
 			}, 
 			{
 				class => 'statement',
 				regexp => '(?m)^=\w+',
-				allowed_container => ['perlpod', 'keyword2'],
+				container => 'keyword2',
 			}, 
 		];
 }
@@ -401,8 +401,8 @@ Append syntax by giving a hash.
 	$highlighter->setSyntax(
 	    syntax => {
 	        class => 'quote',
-	        regexp => q@'.*?(?<!¥¥¥¥)'@,
-	        allowed_container => ['comment'],
+	        regexp => "'.*?'",
+	        container => 'comment',
 	    }
 	);
 

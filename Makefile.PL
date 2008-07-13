@@ -11,7 +11,7 @@ WriteMakefile(
     PREREQ_PM => {
         'Test::More' => 0,
         'version'    => 0,
-        'Syntax::Highlight::Engine::Simple'    => 0,
+        'Syntax::Highlight::Engine::Simple'    => '0.02',
     },
     dist                => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
     clean               => { FILES => 'Syntax-Highlight-Engine-Simple-Perl-*' },

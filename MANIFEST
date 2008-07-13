@@ -1,9 +1,9 @@
-.cvsignore
 Build.PL
 Changes
 lib/Syntax/Highlight/Engine/Simple/Perl.pm
 Makefile.PL
 MANIFEST
+META.yml
 README
 t/00.load.t
 t/highlight.t
@@ -11,4 +11,3 @@ t/perlcritic.t
 t/perlcriticrc
 t/pod-coverage.t
 t/pod.t
-META.yml
